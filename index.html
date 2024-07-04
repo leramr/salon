@@ -4,27 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>salon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
     <!-- star header -->
     <header>
-        <div class="container">
-            <img class="logo-header" src="./img/logo.png" alt="logo">
+        <div class="header-container">
+            <svg class="logo-header">
+                <use href="./img/sprite.svg#icon-logo"></use>
+            </svg>
 
-            <ul class="nav-header">
+            <ul class="nav-header list">
                 <li class="nav-header-list">
-                    <a href="">Despre</a>
+                    <a class="nav-header-link link current" href="">Despre</a>
                 </li>
                 <li class="nav-header-list">
-                    <a href="">Servicii</a>
+                    <a class="nav-header-link link" href="">Servicii</a>
                 </li>
                 <li class="nav-header-list">
-                    <a href="">Prețuri</a>
+                    <a class="nav-header-link link" href="">Prețuri</a>
                 </li>
                 <li class="nav-header-list">
-                    <a href="">Contact</a>
+                    <a class="nav-header-link link" href="">Contact</a>
                 </li>
             </ul>
 
@@ -36,50 +41,91 @@
 
     <!-- start main -->
     <main>
+
         <!-- start main page -->
         <div class="main-container">
-            <h1 class="main-title">Investește în pielea ta cu Aestethic Lab</h1>
-        <p class="main-description">Oferim servicii de înfrumusețare și tratamente, de cea mai bună calitate.</p>
+                <div class="main-container-description">
+                    <h1 class="main-title">Investește <br> în pielea ta cu <br> Aestethic Lab</h1>
+                <p class="main-description">Oferim servicii de înfrumusețare și tratamente, de cea mai bună calitate.</p>
 
-        <!-- start part of cleaning face with description -->
-        <img class="face-cleaning" src="./img/main/cleaning_face.png" alt="face cleaning" >
-        <h2 class="secondaty-title">Surprinde Persoana Iubită cu un Voucher Cadou!</h2>
-        <p class="secondary-description">Alege cel mai frumos si ​inspirat cadou!</p>
-        <button class="main-btn" type="button">Rezervă acum</button>
-        <!-- end part of cleaning face with description -->
+                <!-- start part of cleaning face with description -->
+                <div class="cleaning-main-container">
+                    <img class="face-cleaning" src="./img/main/cleaning_face.png" alt="face cleaning" >
+                        <div class="cleaning-description-container">
+                            <h2 class="secondaty-title">Surprinde Persoana Iubită <br> cu un Voucher Cadou!</h2>
+                            <p class="secondary-description">Alege cel mai frumos si ​inspirat cadou!</p>
+                                <div class="main-btn-svg">
+                                    <button class="main-btn" type="button">Rezervă acum</button>
+                                    <svg class="main-btn-svg" width="16" height="16">
+                                        <use href="./img/sprite.svg#icon-right-arrow"></use>
+                                    </svg>
+                                </div>
+                            
+                        </div>
+                </div>
 
-        <!-- start lower part main page -->
-        <ul class="main-advantages">
-            <li class="main-advantages-list">
-                <img class="main-advantages-img" src="./img/main/diamond.png" alt="diamond" >
-                    <p class="main-advantages-description"></p>
-                </img>
-            </li>
-            <li class="main-advantages-list">
-                <img class="main-advantages-img" src="./img/main/document.png" alt="document" >
-                    <p class="main-advantages-description"></p>
-                </img>
-            </li>
-            <li class="main-advantages-list">
-                <img class="main-advantages-img" src="./img/main/medal.png" alt="medal" >
-                    <p class="main-advantages-description"></p>
-                </img>
-            </li>
-        </ul>
-        <!-- end lower part main page -->
+                </div>
 
-        <img class="main-img" src="./img/main/woman-main.png" alt="main woman" >
-        <!-- end main page -->
+            <!-- end part of cleaning face with description -->
+            <!-- start lower part main page -->
+                <ul class="main-advantages list">
+                    <li class="main-advantages-list">
+                        <div class="main-advantages-container">
+                            <svg class="main-advantages-svg" >
+                                <use href="./img/sprite.svg#icon-diamond"></use>
+                            </svg>
+                            <p class="main-advantages-description">Produse de calitate</p>
+                        </div>
+                    </li>
+                    <li class="main-advantages-list">
+                        <div class="main-advantages-container">
+                            <svg class="main-advantages-svg" >
+                                <use href="./img/sprite.svg#icon-certificate"></use>
+                            </svg>
+                                <p class="main-advantages-description">Personal calificat</p>
+                        </div>
+                    </li>
+                    <li class="main-advantages-list">
+                        <div class="main-advantages-container">
+                            <svg class="main-advantages-svg" >
+                                <use href="./img/sprite.svg#icon-medal"></use>
+                            </svg>
+                            <p class="main-advantages-description">Standarde înalte</p>
+                        </div>
+                    </li>
+                </ul>
+            <!-- end lower part main page -->
+            <img class="main-img" src="./img/main/woman-main.png" alt="main woman" >
+                <div class="oval-main"></div>
+                <svg class="main-img-svg" width="92" height="92">
+                    <use href="./img/sprite.svg#icon-sun-star"></use>
+                </svg>
+            
+            <!-- end main page -->
         </div>
+        
 
         <!-- start description page -->
         <div class="description-container">
-            <img class="lifting-description" src="./img/description/lifting.png" alt="lifting face" >
+            <div class="container-img-description">
+                <img class="lifting-description" src="./img/description/lifting.png" alt="lifting face" >
 
-            <h2 class="description-title">Produse profesionale de îngrijire și ​frumusețe a pielii de nivel premium</h2>
-            <p class="description-definition">Expertiză, combinată cu calitate: Esența frumuseții.  La Aesthetc Lab avem produse profesionale de îngrijire și frumusețe a pielii excepționale.</p>
-            <button class="description-btn" type="button">PROGRAMARE</button>
-
+                <div class="container-description-btn">
+                    <h2 class="description-title">Produse profesionale de <br> îngrijire și ​frumusețe a pielii <br> de nivel premium</h2>
+                    <p class="description-definition">Expertiză, combinată cu calitate: Esența frumuseții.  La Aesthetc Lab avem produse <br> profesionale de îngrijire și frumusețe a pielii excepționale.</p>
+                    <div class="description-btn-svg-container">
+                        <svg class="description-btn-svg">
+                           <use href="./img/sprite.svg#icon-clock"></use>
+                        </svg>
+                        <button class="description-btn" type="button">PROGRAMARE</button>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            <svg class="description-sun-svg">
+                <use href="./img/sprite.svg"></use>
+            </svg>
             <img class="description-img" src="./img/description/white_mask_half_face.png" alt="mask on half face">
         </div>
         <!-- end description page -->
