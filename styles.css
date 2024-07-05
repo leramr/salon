@@ -59,7 +59,7 @@ address {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1000;
+  z-index: 10;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -271,7 +271,7 @@ address {
   position: absolute;
   top: 250px;
   right: 750px;
-  z-index: 100;
+  z-index: 9;
 }
 
 .main-advantages {
@@ -775,7 +775,7 @@ address {
   background-color: var(--main-color);
 }
 
-.contact-leaf{
+.contact-leaf {
   position: absolute;
   top: -60px;
   left: 0;
@@ -955,3 +955,60 @@ address {
 }
 
 /* end footer */
+
+/* start modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 12;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 33, 33, 0.8);
+
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal:target{
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-body {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  width: 600px;
+  padding: 20px 35px;
+  background-color: #fff;
+}
+
+.modal-btn{
+position: absolute;
+top: 10px;
+right: 10px;
+background-color: purple;
+color: aliceblue;
+border-radius: 10px;
+width: 20px;
+height: 20px;
+
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.modal-area{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* end modal */
+

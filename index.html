@@ -21,7 +21,7 @@
   </head>
   <body>
     <!-- star header -->
-    <header>
+    <header id="header">
       <div class="header-container">
         <svg class="logo-header">
           <use href="./img/sprite.svg#icon-logo"></use>
@@ -38,7 +38,7 @@
             <a class="nav-header-link link" href="">Prețuri</a>
           </li>
           <li class="nav-header-list">
-            <a class="nav-header-link link" href="">Contact</a>
+            <a class="nav-header-link link" href="#modal">Contact</a>
           </li>
         </ul>
 
@@ -637,6 +637,22 @@
         <p class="footer-copy">Toate drepturile rezervate &copy; Aesthetic Lab</p>
       </div>
     </footer>
-    <!-- strat footer -->
+    <!-- end footer -->
+
+
+    <!-- start modal -->
+    <div class="modal" id="modal">
+        <a href="#header" class="modal-area">
+            <div class="modal-body">
+                <div class="modal-content">
+                    <h2 class="modal-title">hi</h2>
+                    <p class="modal-description">hi hello</p>
+                    <a href="#header" class="modal-btn link">X</a>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <!-- end modal -->
   </body>
 </html>
