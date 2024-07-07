@@ -100,15 +100,6 @@ address {
   position: relative;
 }
 
-/* .nav-header-link.current:hover {
-  display: block;
-
-  font-weight: 400;
-  font-size: 21px;
-  color: #fff;
-  border-radius: 20px;
-} */
-
 .button-header {
   padding: 0;
   margin-right: 70px;
@@ -884,7 +875,7 @@ address {
   font-weight: 400;
   font-size: 20px;
   line-height: 1.105;
-  color: #fff;
+  color: var(--main-color);
 }
 
 .footer-lower-description {
@@ -892,21 +883,21 @@ address {
   font-weight: 400;
   font-size: 20px;
   line-height: 1.105;
-  color: #9e9e9e;
+  color: var(--main-color);
 }
 
-.footer-social-links {
+.social-links {
   display: flex;
   gap: 15px;
 }
 
-.footer-social-list {
+.social-list {
   margin-top: 60px;
   margin-bottom: 130px;
 }
 
-.footer-social-svg {
-  fill: #fff;
+.social-svg {
+  fill: var(--main-color);
   width: 30px;
   height: 30px;
 }
@@ -927,13 +918,13 @@ address {
 }
 
 .footer-nav-description,
-.footer-contact-link,
+.contact-link,
 .footer-time-description {
   font-family: var(--main-font);
   font-weight: 400;
   font-size: 20px;
   line-height: 1.105;
-  color: #9e9e9e;
+  color: var(--main-color);
 }
 
 .footer-nav-item,
@@ -949,66 +940,172 @@ address {
   font-weight: 400;
   font-size: 20px;
   line-height: 1.105;
-  color: #9e9e9e;
+  color: var(--main-color);
 
   text-align: center;
 }
 
 /* end footer */
 
-/* start modal */
-.modal {
+/* start contact modal */
+.modal-contact {
   position: fixed;
   top: 0;
   left: 0;
   z-index: 12;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100%;
   background-color: rgba(33, 33, 33, 0.8);
 
   opacity: 0;
   visibility: hidden;
+  /* overflow-y: auto;
+  overflow-x: hidden; */
+  transition: all 0.8s ease;
 }
 
-.modal:target{
+.modal-contact:target {
   opacity: 1;
   visibility: visible;
 }
 
-.modal-body {
+.modal-contact.open .modal-content {
+  opacity: 1;
+}
+
+.modal-contact-area {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+}
+
+.modal-contact-body {
+  position: relative;
+  text-align: center;
+
+  width: 600px;
+  padding: 20px 35px;
+  background-color: var(--main-color);
+  border-radius: 15px;
+}
+
+.modal-contact-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--main-color);
+  max-width: 800px;
+  padding: 30px;
+}
+
+.modal-contact-title {
+  font-family: var(--main-font);
+  font-size: 23px;
+
+  margin-bottom: 35px;
+}
+
+.modal-contact-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.contact-link.modal-contact-link {
+  color: #212121;
+  margin-bottom: 10px;
+}
+
+.modal-contact-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 15;
+  background-color: #212121;
+  fill: var(--main-color);
+  border-radius: 15px;
+  width: 30px;
+  height: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-links.modal-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 15px;
+}
+
+.social-list.modal-icon {
+  margin: 0;
+}
+
+.social-svg.modal-icon {
+  fill: #212121;
+}
+
+/* end contact modal */
+
+/* start services modal */
+.modal-services {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 12;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(33, 33, 33, 0.7);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.8s ease ;
+}
+
+.modal-services.open{
+opacity: 1;
+visibility: visible;
+}
+
+.modal-services-body {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+  width: 800px;
+  height: 500px;
+  border-radius: 15px;
 
-  width: 600px;
-  padding: 20px 35px;
-  background-color: #fff;
+  background-color: var(--main-color);
 }
 
-.modal-btn{
-position: absolute;
-top: 10px;
-right: 10px;
-background-color: purple;
-color: aliceblue;
-border-radius: 10px;
-width: 20px;
-height: 20px;
-
-display: flex;
-justify-content: center;
-align-items: center;
-}
-
-.modal-area{
+.modal-services-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
+  top: 10px;
+  right: 10px;
+  background-color: #212121;
+  color: var(--main-color);
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
 }
-
-/* end modal */
-
+/* end services modal */

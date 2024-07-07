@@ -1,658 +1,654 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="./styles.css">
     <title>salon</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="./styles.css" />
-  </head>
-  <body>
+</head>
+
+<body>
     <!-- star header -->
-    <header id="header">
-      <div class="header-container">
-        <svg class="logo-header">
-          <use href="./img/sprite.svg#icon-logo"></use>
-        </svg>
+    <header>
+        <div class="header-container">
+            <svg class="logo-header">
+                <use href="./img/sprite.svg#icon-logo"></use>
+            </svg>
 
-        <ul class="nav-header list">
-          <li class="nav-header-list">
-            <a class="nav-header-link link" href="">Despre</a>
-          </li>
-          <li class="nav-header-list">
-            <a class="nav-header-link link" href="">Servicii</a>
-          </li>
-          <li class="nav-header-list">
-            <a class="nav-header-link link" href="">Prețuri</a>
-          </li>
-          <li class="nav-header-list">
-            <a class="nav-header-link link" href="#modal">Contact</a>
-          </li>
-        </ul>
+            <ul class="nav-header list">
+                <li class="nav-header-list">
+                    <a class="nav-header-link link" href="">Despre</a>
+                </li>
+                <li class="nav-header-list">
+                    <a class="nav-header-link link modal-services-link" href="#modal-services">Servicii</a>
+                </li>
+                <li class="nav-header-list">
+                    <a class="nav-header-link link" href="">Prețuri</a>
+                </li>
+                <li class="nav-header-list">
+                    <a class="nav-header-link link" href="#modal-contact">Contact</a>
+                </li>
+            </ul>
 
-        <button class="button-header" type="button">PROGRAMARE</button>
-      </div>
+            <button class="button-header" type="button">PROGRAMARE</button>
+        </div>
     </header>
     <!-- end header -->
 
     <!-- start main -->
     <main>
-      <!-- start main page -->
-      <div class="main-container">
-        <div class="main-container-description">
-          <h1 class="main-title">
-            Investește <br />
-            în pielea ta cu <br />
-            Aestethic Lab
-          </h1>
-          <p class="main-description">
-            Oferim servicii de înfrumusețare și tratamente, de cea mai bună
-            calitate.
-          </p>
-
-          <!-- start part of cleaning face with description -->
-          <div class="cleaning-main-container">
-            <img
-              class="face-cleaning"
-              src="./img/main/cleaning_face.png"
-              alt="face cleaning"
-            />
-            <div class="cleaning-description-container">
-              <h2 class="secondaty-title">
-                Surprinde Persoana Iubită <br />
-                cu un Voucher Cadou!
-              </h2>
-              <p class="secondary-description">
-                Alege cel mai frumos si ​inspirat cadou!
-              </p>
-              <div class="main-btn-svg">
-                <button class="main-btn" type="button">Rezervă acum</button>
-                <svg class="main-btn-svg" width="16" height="16">
-                  <use href="./img/sprite.svg#icon-right-arrow"></use>
-                </svg>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- end part of cleaning face with description -->
-        <!-- start lower part main page -->
-        <ul class="main-advantages list">
-          <li class="main-advantages-list">
-            <div class="main-advantages-container">
-              <svg class="main-advantages-svg">
-                <use href="./img/sprite.svg#icon-diamond"></use>
-              </svg>
-              <p class="main-advantages-description">Produse de calitate</p>
-            </div>
-          </li>
-          <li class="main-advantages-list">
-            <div class="main-advantages-container">
-              <svg class="main-advantages-svg">
-                <use href="./img/sprite.svg#icon-certificate"></use>
-              </svg>
-              <p class="main-advantages-description">Personal calificat</p>
-            </div>
-          </li>
-          <li class="main-advantages-list">
-            <div class="main-advantages-container">
-              <svg class="main-advantages-svg">
-                <use href="./img/sprite.svg#icon-medal"></use>
-              </svg>
-              <p class="main-advantages-description">Standarde înalte</p>
-            </div>
-          </li>
-        </ul>
-        <!-- end lower part main page -->
-        <img
-          class="main-img"
-          src="./img/main/woman-main.png"
-          alt="main woman"
-        />
-        <div class="oval-main"></div>
-        <svg class="main-img-svg" width="92" height="92">
-          <use href="./img/sprite.svg#icon-sun-star"></use>
-        </svg>
-
-        <!-- end main page -->
-      </div>
-
-      <!-- start description page -->
-      <div class="description-container">
-        <div class="container-img-description">
-          <img
-            class="lifting-description"
-            src="./img/description/lifting.png"
-            alt="lifting face"
-          />
-
-          <div class="container-description-btn">
-            <h2 class="description-title">
-              Produse profesionale de <br />
-              îngrijire și ​frumusețe a pielii <br />
-              de nivel premium
-            </h2>
-            <p class="description-definition">
-              Expertiză, combinată cu calitate: Esența frumuseții. La Aesthetc
-              Lab avem produse <br />
-              profesionale de îngrijire și frumusețe a pielii excepționale.
-            </p>
-            <div class="description-btn-svg-container">
-              <svg class="description-btn-svg">
-                <use href="./img/sprite.svg#icon-clock"></use>
-              </svg>
-              <button class="description-btn" type="button">PROGRAMARE</button>
-            </div>
-          </div>
-        </div>
-
-        <svg class="description-sun-svg" width="460" height="540" viewBox="0 0 460 540" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g clip-path="url(#clip0_22_549)">
-              <path d="M327.334 201.832C326.722 201.178 326.729 200.15 327.409 199.513L350.251 178.12C350.904 177.509 351.932 177.517 352.57 178.197C353.182 178.851 353.175 179.879 352.495 180.516L329.652 201.909C329 202.52 327.946 202.485 327.334 201.832Z" stroke="#ECD8BD" stroke-miterlimit="10" />
-              <path d="M298.915 177.755C298.379 177.184 298.328 176.312 298.798 175.668L317.565 150.631C318.115 149.911 319.121 149.786 319.817 150.311C320.512 150.835 320.663 151.868 320.14 152.563L301.373 177.6C300.822 178.32 299.816 178.445 299.121 177.921C299.042 177.892 298.966 177.81 298.915 177.755Z" stroke="#ECD8BD" stroke-miterlimit="10" />
-              <path d="M266.713 158.96C266.254 158.47 266.145 157.754 266.456 157.105L280.595 129.198C281.016 128.394 281.977 128.057 282.781 128.479C283.559 128.874 283.923 129.862 283.501 130.666L269.362 158.573C268.941 159.377 267.981 159.714 267.177 159.292C266.995 159.206 266.84 159.096 266.713 158.96Z" stroke="#ECD8BD" stroke-miterlimit="10" />
-              <path d="M231.762 146.059C231.38 145.651 231.215 145.039 231.392 144.465L240.454 114.516C240.719 113.654 241.604 113.182 242.466 113.449C243.328 113.715 243.8 114.601 243.535 115.462L234.473 145.411C234.208 146.273 233.323 146.744 232.461 146.478C232.199 146.417 231.941 146.25 231.762 146.059Z" stroke="#ECD8BD" stroke-miterlimit="10" />
-              <path d="M195.108 139.406C194.802 139.079 194.606 138.598 194.701 138.1L198.419 107.023C198.526 106.156 199.339 105.498 200.206 105.606C201.073 105.714 201.732 106.527 201.625 107.394L197.907 138.47C197.8 139.337 196.987 139.996 196.121 139.888C195.699 139.874 195.362 139.678 195.108 139.406Z" stroke="#ECD8BD" stroke-miterlimit="10" />
-              <path d="M157.848 139.246C157.593 138.974 157.42 138.625 157.406 138.229L155.697 106.972C155.646 106.1 156.331 105.305 157.228 105.282C158.1 105.232 158.896 105.918 158.92 106.816L160.628 138.073C160.68 138.945 159.995 139.74 159.097 139.762C158.621 139.799 158.154 139.573 157.848 139.246Z" stroke="#ECD8BD" stroke-miterlimit="10" />
-              <path d="M121.146 145.514C120.967 145.323 120.818 145.055 120.748 144.762L113.634 114.274C113.425 113.397 113.981 112.519 114.831 112.336C115.708 112.128 116.586 112.685 116.77 113.535L123.884 144.023C124.093 144.9 123.537 145.778 122.687 145.961C122.101 146.152 121.528 145.922 121.146 145.514Z" stroke="#ECD8BD" stroke-miterlimit="10" />
-              <path d="M86.0854 158.113C85.9579 157.977 85.8576 157.816 85.7845 157.629L73.4733 128.84C73.1044 128.011 73.5038 127.074 74.3332 126.706C75.1627 126.338 76.0992 126.739 76.468 127.569L88.7793 156.357C89.1482 157.187 88.7488 158.123 87.9193 158.491C87.2514 158.759 86.5443 158.603 86.0854 158.113Z" stroke="#ECD8BD" stroke-miterlimit="10" />
-              <path d="M53.7635 176.58C53.687 176.498 53.636 176.444 53.5867 176.337L36.4723 150.105C35.9692 149.35 36.2122 148.356 36.9396 147.879C37.6943 147.376 38.7157 147.595 39.1662 148.349L56.2806 174.58C56.7837 175.336 56.5407 176.33 55.8133 176.807C55.1657 177.26 54.2989 177.152 53.7635 176.58Z" stroke="#ECD8BD" stroke-miterlimit="10" />
-              <path d="M25.1469 200.366L3.7307 177.498C3.11881 176.845 3.12557 175.817 3.80542 175.18C4.45807 174.569 5.48637 174.577 6.12375 175.257L27.54 198.125C28.1518 198.778 28.1451 199.806 27.4652 200.443C26.7854 201.08 25.7588 201.019 25.1469 200.366Z" stroke="#ECD8BD" stroke-miterlimit="10" />
-              <path d="M347.632 526.933L326.216 504.066C325.604 503.412 325.611 502.384 326.291 501.747C326.943 501.136 327.971 501.144 328.609 501.824L350.025 524.692C350.637 525.345 350.63 526.373 349.95 527.01C349.272 527.594 348.244 527.586 347.632 526.933Z" stroke="#ECD8BD" stroke-miterlimit="10" />
-              <path d="M350.287 475.645C349.752 475.073 349.701 474.201 350.17 473.558C350.721 472.837 351.727 472.713 352.422 473.237L377.477 492.032C378.198 492.583 378.323 493.59 377.8 494.285C377.249 495.005 376.243 495.129 375.548 494.605L350.493 475.81C350.415 475.781 350.338 475.699 350.287 475.645Z" stroke="#ECD8BD" stroke-miterlimit="10" />
-              <path d="M369.02 443.486C368.561 442.996 368.453 442.28 368.764 441.631C369.185 440.828 370.145 440.491 370.949 440.913L398.87 455.083C399.674 455.505 400.012 456.466 399.591 457.269C399.169 458.073 398.209 458.41 397.405 457.988L369.484 443.818C369.302 443.733 369.148 443.622 369.02 443.486Z" stroke="#ECD8BD" stroke-miterlimit="10" />
-              <path d="M381.882 408.547C381.5 408.139 381.335 407.527 381.512 406.952C381.777 406.091 382.662 405.619 383.524 405.885L413.481 414.98C414.343 415.246 414.815 416.132 414.55 416.993C414.285 417.855 413.399 418.327 412.538 418.06L382.581 408.966C382.319 408.905 382.061 408.738 381.882 408.547Z" stroke="#ECD8BD" stroke-miterlimit="10" />
-              <path d="M388.471 371.869C388.165 371.543 387.97 371.061 388.065 370.564C388.172 369.697 388.984 369.038 389.851 369.146L420.929 372.898C421.796 373.006 422.456 373.819 422.349 374.686C422.242 375.552 421.429 376.211 420.562 376.103L389.484 372.351C389.09 372.312 388.726 372.142 388.471 371.869Z" stroke="#ECD8BD" stroke-miterlimit="10" />
-              <path d="M388.644 334.609C388.389 334.337 388.215 333.988 388.202 333.592C388.151 332.72 388.836 331.925 389.733 331.902L420.986 330.227C421.858 330.177 422.654 330.862 422.677 331.76C422.728 332.632 422.043 333.427 421.146 333.45L389.893 335.125C389.417 335.162 388.95 334.936 388.644 334.609Z" stroke="#ECD8BD" stroke-miterlimit="10" />
-              <path d="M382.284 297.896C382.106 297.705 381.956 297.436 381.886 297.144C381.677 296.267 382.233 295.388 383.083 295.206L413.561 288.124C414.438 287.916 415.317 288.473 415.5 289.323C415.709 290.2 415.154 291.078 414.304 291.261L383.826 298.343C383.267 298.509 382.667 298.304 382.284 297.896Z" stroke="#ECD8BD" stroke-miterlimit="10" />
-              <path d="M369.674 262.847C369.546 262.711 369.446 262.549 369.373 262.362C369.004 261.532 369.403 260.596 370.233 260.228L399.006 247.947C399.835 247.579 400.772 247.979 401.141 248.809C401.51 249.639 401.11 250.575 400.281 250.943L371.508 263.224C370.865 263.519 370.133 263.337 369.674 262.847Z" stroke="#ECD8BD" stroke-miterlimit="10" />
-              <path d="M351.201 230.477C351.124 230.396 351.073 230.341 351.024 230.234C350.521 229.479 350.764 228.485 351.492 228.008L377.703 210.92C378.458 210.418 379.479 210.637 379.93 211.39C380.433 212.145 380.19 213.139 379.462 213.616L353.251 230.704C352.576 231.183 351.736 231.049 351.201 230.477Z" stroke="#ECD8BD" stroke-miterlimit="10" />
-            </g>
-            <defs>
-              <clipPath id="clip0_22_549">
-                <rect width="497.065" height="257.823" fill="white" transform="translate(188.182) rotate(46.8768)" />
-              </clipPath>
-            </defs>
-          </svg>
-        <img
-          class="description-img"
-          src="./img/description/white_mask_half_face.png"
-          alt="mask on half face"
-        />
-
-        <svg class="description-botom-svg" width="114" height="114" viewBox="0 0 114 114" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g clip-path="url(#clip0_22_504)">
-              <path d="M108.415 51.7386L63.0946 54.4726L97.0728 24.3577C97.2243 24.2269 97.3827 24.0616 97.5204 23.9101C99.4487 21.7339 99.249 18.4008 97.0728 16.4726C94.8967 14.5444 91.5636 14.7441 89.6353 16.9202L59.5273 50.9054L62.2544 5.58496C62.2682 5.38525 62.2682 5.1511 62.2544 4.95139C62.0822 2.04527 59.5824 -0.165316 56.6763 0.00684733C53.7702 0.179011 51.5596 2.67883 51.7317 5.58496L54.4657 50.9054L24.3646 16.9271C24.2337 16.7756 24.0685 16.6172 23.917 16.4795C21.7408 14.5512 18.4077 14.751 16.4795 16.9271C14.5512 19.1033 14.751 22.4364 16.9271 24.3646L50.9054 54.4726L5.58496 51.7386C5.38525 51.7249 5.1511 51.7249 4.95139 51.7386C2.04527 51.9108 -0.165316 54.4106 0.00684733 57.3167C0.179011 60.2229 2.67883 62.4335 5.58496 62.2613L50.9054 59.5273L16.9271 89.6422C16.7825 89.7731 16.6172 89.9383 16.4795 90.0899C14.5512 92.266 14.751 95.5991 16.9271 97.5273C19.1033 99.4556 22.4364 99.2559 24.3646 97.0797L54.4726 63.0946L51.7386 108.415C51.7317 108.615 51.7249 108.849 51.7386 109.049C51.9108 111.955 54.4106 114.165 57.3167 113.993C60.2229 113.821 62.4335 111.321 62.2613 108.415L59.5273 63.0946L89.6422 97.0728C89.7731 97.2243 89.9383 97.3827 90.0899 97.5204C92.266 99.4487 95.5991 99.249 97.5273 97.0728C99.4556 94.8967 99.2559 91.5636 97.0797 89.6353L63.0946 59.5273L108.415 62.2613C108.615 62.2751 108.849 62.2751 109.049 62.2613C111.955 62.0891 114.165 59.5893 113.993 56.6832C113.814 53.7771 111.321 51.5665 108.415 51.7386Z" fill="#ECD8BD" />
-            </g>
-            <defs>
-              <clipPath id="clip0_22_504">
-                <rect width="114" height="114" fill="white" />
-              </clipPath>
-            </defs>
-          </svg>
-      </div>
-      <!-- end description page -->
-
-      <!-- start photo page -->
-      <div class="photo-container">
-        <h2 class="photo-title">Serviciile noastre</h2>
-        <p class="photo-description">
-          Răsfață-te cu serviciile noastre pentru toate vârstele
-        </p>
-
-        <ul class="photo-list">
-          <li class="photo-item list">
-            <img
-              class="photo-img"
-              src="./img/photo/massage-face.png"
-              alt="massage face"
-            />
-            <p class="photo-main-description">Rejuvenare faciala laser</p>
-            <div class="photo-description-btn-container">
-                <button class="photo-list-btn">Ofertă</button>
-                <p class="photo-secondary-description">350 Lei</p>
-            </div>
-          </li>
-          <li class="photo-item list">
-            <img
-              class="photo-img"
-              src="./img/photo/mask-with-towel.png"
-              alt="service with mask and white towel on forehead"
-            />
-            <p class="photo-main-description">Glow Peel</p>
-            <div class="photo-description-btn-container">
-                <button class="photo-list-btn">Ofertă</button>
-                <p class="photo-secondary-description">400 Lei</p>
-            </div>
-            
-          </li>
-          <li class="photo-item list">
-            <img
-              class="photo-img"
-              src="./img/photo/gel-mask.png"
-              alt="gel mask"
-            />
-            <p class="photo-main-description">Peeling chimic</p>
-            <div class="photo-description-btn-container">
-                <button class="photo-list-btn">Ofertă</button>
-                <p class="photo-secondary-description">350 Lei</p>
-            </div>
-            
-          </li>
-          <li class="photo-item list">
-            <img
-              class="photo-img"
-              src="./img/photo/cleaning-left-cheek.png"
-              alt="cleaning left cheek"
-            />
-            <p class="photo-main-description">Microneedling</p>
-            <div class="photo-description-btn-container">
-                <button class="photo-list-btn">Ofertă</button>
-                <p class="photo-secondary-description">350 Lei</p>
-            </div>
-            
-          </li>
-          <li class="photo-item list">
-            <img
-              class="photo-img"
-              src="./img/photo/cleaning-forehead.png"
-              alt="cleaning forehead"
-            />
-            <p class="photo-main-description">Microneedling cu Botox</p>
-            <div class="photo-description-btn-container">
-              <button class="photo-list-btn">Ofertă</button>
-              <p class="photo-secondary-description">1150 Lei</p>
-            </div>
-          </li>
-        </ul>
-
-        <div class="photo-btn-container">
-          <button class="photo-main-btn" type="button">
-            VEZI PAGINA SERVICII
-          </button>
-        </div>
-      </div>
-      <!-- end photo page -->
-
-      <!-- start masters page -->
-      <div class="masters-container">
-        <ul class="masters-list">
-          <li class="masters-item list">
-            <img
-              class="masters-img"
-              src="./img/masters/woman-with-flower.png"
-              alt="master with flower in hand"
-            />
-            <svg class="masters-item-zigzag" width="759" height="189" viewBox="0 0 759 189" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M747.007 165.884L621.895 23L494.716 165.884L372.603 23L245.425 165.884L124.179 23L-3 165.884" stroke="#2C2C2C" stroke-width="30" stroke-miterlimit="10" />
-              </svg>
-          </li>
-
-          <li class="masters-item list">
-            <div class="masters-description-container">
-                <p class="higher-masters-title">Despre noi</p>
-                <h2 class="masters-title">
-                    Expertiză, combinată cu calitate: Esența frumuseții.
-                </h2>
-                <p class="lower-masters-description">
-                    La Aesthetic Lab avem produse profesionale de îngrijire și frumusețe a
-                    pielii excepționale. Munca noastră se concetrează pe tine, clienta
-                    nostră: tot ceea ce facem la Esthetic Lab începe și se termină cu
-                    tratamentul de înfrumusețare cu produse cosmetice de calitate, oferim
-                    întotdeauna clientelor noastre un nivel optim de tratament și
-                    îngrijire cu Produse de calitate premiate si de succes. În calitate de
-                    specialiști în frumusețe și wellness, vă împărtășim obiectivul nostru
-                    de a satisface nevoile individuale cu produse de frumusețe într-un mod
-                    inovator, cu o precizie care inspiră încredere. Acest lucru ne-a făcut
-                    și continuă să ne facă să fim unici.
+        <!-- start main page -->
+        <div class="main-container">
+            <div class="main-container-description">
+                <h1 class="main-title">
+                    Investește <br />
+                    în pielea ta cu <br />
+                    Aestethic Lab
+                </h1>
+                <p class="main-description">
+                    Oferim servicii de înfrumusețare și tratamente, de cea mai bună
+                    calitate.
                 </p>
-            </div>
-          </li>
 
-          <li class="masters-item list">
-            <svg class="masters-item-svg-dots" width="76" height="60" viewBox="0 0 76 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_22_511)">
-                  <path d="M4.61 2.3C4.61 3.57 3.58 4.6 2.31 4.6C1.03 4.61 0 3.58 0 2.3C0 1.02 1.03 0 2.3 0C3.58 0 4.61 1.03 4.61 2.3Z" fill="#ECD8BD" />
-                  <path d="M28.1601 2.3C28.1601 3.57 27.1301 4.6 25.8601 4.6C24.5901 4.6 23.5601 3.57 23.5601 2.3C23.5601 1.03 24.5801 0 25.8501 0C27.1201 0 28.1601 1.03 28.1601 2.3Z" fill="#ECD8BD" />
-                  <path d="M51.7001 2.3C51.7001 3.57 50.6701 4.6 49.4001 4.6C48.1301 4.6 47.1001 3.57 47.1001 2.3C47.1001 1.03 48.1301 0 49.4001 0C50.6701 0 51.7001 1.03 51.7001 2.3Z" fill="#ECD8BD" />
-                  <path d="M75.2499 2.3C75.2499 3.57 74.2199 4.6 72.9499 4.6C71.6799 4.6 70.6499 3.57 70.6499 2.3C70.6499 1.03 71.6699 0 72.9499 0C74.2199 0 75.2499 1.03 75.2499 2.3Z" fill="#ECD8BD" />
-                  <path d="M4.61001 20.6401C4.61001 21.9101 3.58001 22.9401 2.31001 22.9401C1.04001 22.9401 0.0100098 21.9101 0.0100098 20.6401C0.0100098 19.3701 1.04001 18.3401 2.31001 18.3401C3.58001 18.3401 4.61001 19.3701 4.61001 20.6401Z" fill="#ECD8BD" />
-                  <path d="M28.1601 20.6401C28.1601 21.9101 27.1301 22.9401 25.8601 22.9401C24.5901 22.9401 23.5601 21.9101 23.5601 20.6401C23.5601 19.3701 24.5901 18.3401 25.8601 18.3401C27.1201 18.3401 28.1601 19.3701 28.1601 20.6401Z" fill="#ECD8BD" />
-                  <path d="M51.7001 20.6401C51.7001 21.9101 50.6701 22.9401 49.4001 22.9401C48.1301 22.9401 47.1001 21.9101 47.1001 20.6401C47.1001 19.3701 48.1301 18.3401 49.4001 18.3401C50.6701 18.3401 51.7001 19.3701 51.7001 20.6401Z" fill="#ECD8BD" />
-                  <path d="M75.2499 20.6401C75.2499 21.9101 74.2199 22.9401 72.9499 22.9401C71.6799 22.9401 70.6499 21.9101 70.6499 20.6401C70.6499 19.3701 71.6799 18.3401 72.9499 18.3401C74.2199 18.3401 75.2499 19.3701 75.2499 20.6401Z" fill="#ECD8BD" />
-                  <path d="M4.61 39C4.61 40.27 3.58 41.3 2.31 41.3C1.03 41.3 0 40.27 0 39C0 37.73 1.03 36.7 2.3 36.7C3.58 36.69 4.61 37.72 4.61 39Z" fill="#ECD8BD" />
-                  <path d="M28.1601 39C28.1601 40.27 27.1301 41.3 25.8601 41.3C24.5901 41.3 23.5601 40.27 23.5601 39C23.5601 37.73 24.5901 36.7 25.8601 36.7C27.1201 36.69 28.1601 37.72 28.1601 39Z" fill="#ECD8BD" />
-                  <path d="M51.7001 39C51.7001 40.27 50.6701 41.3 49.4001 41.3C48.1301 41.3 47.1001 40.27 47.1001 39C47.1001 37.73 48.1301 36.7 49.4001 36.7C50.6701 36.69 51.7001 37.72 51.7001 39Z" fill="#ECD8BD" />
-                  <path d="M75.2499 39C75.2499 40.27 74.2199 41.3 72.9499 41.3C71.6799 41.3 70.6499 40.27 70.6499 39C70.6499 37.73 71.6799 36.7 72.9499 36.7C74.2199 36.69 75.2499 37.72 75.2499 39Z" fill="#ECD8BD" />
-                  <path d="M4.61001 57.33C4.61001 58.6 3.58001 59.63 2.31001 59.63C1.04001 59.63 0.0100098 58.6 0.0100098 57.33C0.0100098 56.06 1.04001 55.03 2.31001 55.03C3.58001 55.03 4.61001 56.06 4.61001 57.33Z" fill="#ECD8BD" />
-                  <path d="M28.1601 57.33C28.1601 58.6 27.1301 59.63 25.8601 59.63C24.5901 59.63 23.5601 58.6 23.5601 57.33C23.5601 56.06 24.5901 55.03 25.8601 55.03C27.1201 55.03 28.1601 56.06 28.1601 57.33Z" fill="#ECD8BD" />
-                  <path d="M51.7001 57.33C51.7001 58.6 50.6701 59.63 49.4001 59.63C48.1301 59.63 47.1001 58.6 47.1001 57.33C47.1001 56.06 48.1301 55.03 49.4001 55.03C50.6701 55.03 51.7001 56.06 51.7001 57.33Z" fill="#ECD8BD" />
-                  <path d="M75.2499 57.33C75.2499 58.6 74.2199 59.63 72.9499 59.63C71.6799 59.63 70.6499 58.6 70.6499 57.33C70.6499 56.06 71.6799 55.03 72.9499 55.03C74.2199 55.03 75.2499 56.06 75.2499 57.33Z" fill="#ECD8BD" />
-                </g>
-                <defs>
-                  <clipPath id="clip0_22_511">
-                    <rect width="75.25" height="59.64" fill="white" />
-                  </clipPath>
-                </defs>
-              </svg>
-            <img
-              class="masters-img"
-              src="./img/masters/woman-with-hads-near-face.png"
-              alt="woman with her hands near the face"
-            />
-          </li>
-        </ul>
-
-
-      </div>
-      <!-- end masters page -->
-
-      <!-- start services page -->
-      <div class="services-container">
-        <svg class="services-lower-svg" width="108" height="107" viewBox="0 0 108 107" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g clip-path="url(#clip0_22_602)">
-              <path d="M101.482 82.743L80.9881 59.945L108 45.58L77.7371 41.3635L89.243 12.9061L63.3785 29.243L53.992 0L44.6215 29.243L18.757 12.9061L30.247 41.3635L0 45.58L26.996 59.945L6.51793 82.743L36.3665 76.282L35.251 107L53.992 82.743L72.749 107L71.6175 76.282L101.482 82.743Z" fill="#B58224" />
-            </g>
-            <defs>
-              <clipPath id="clip0_22_602">
-                <rect width="108" height="107" fill="white" />
-              </clipPath>
-            </defs>
-          </svg>
-
-        <h2 class="services-title">KLAPP - Tratamente cosmetice inovatoare</h2>
-        
-        <ul class="services-list-btn">
-          <li class="services-item list">
-            <button class="services-btn">A Classic Gold</button>
-          </li>
-          <li class="services-item list">
-            <button class="services-btn">Caviar Power</button>
-          </li>
-          <li class="services-item list">
-            <button class="services-btn">X-Treme Hyaluron Infusion</button>
-          </li>
-          <li class="services-item list">
-            <button class="services-btn">Clinical Care</button>
-          </li>
-          <li class="services-item list">
-            <button class="services-btn">Peeling Acid</button>
-          </li>
-        </ul>
-
-        <div class="services-description-effects-container">
-            <p class="services-description">
-                Vitamina A are o importanță fundamentală în structura și funcționarea
-                pielii, ​având un efect stimulant în combaterea îmbătrânirii. Se
-                stimulează formarea ​colagenului și activitatea enzimatică și are un
-                efect benefic asupra ​mecanismelor de reparare a pielii. Retinolul
-                utilizat de GK a făcut dovada ​înaltei sale eficiente obtinandu-se
-                rezultate remarcabile. Produsele au o ​eficiență maximă, ingredientele
-                active fiind perfect echilibrate, realizând în ​felul acesta la un
-                tratament remarcabil, cu rezultate dorite: o piele proaspătă și
-                elastică.
-              </p>
-      
-              <ul class="services-list-effects">
-                <li class="services-item-effects list">
-                  <h3 class="services-effects-title">Efectele tratamentului:</h3>
-                </li>
-                <li class="services-item-effects list">
-                  <p class="services-item-description">Stimulează mușchii feței</p>
-                </li>
-                <li class="services-item-effects list">
-                  <p class="services-item-description">
-                    Armonizează fluxul de energie
-                  </p>
-                </li>
-                <li class="services-item-effects list">
-                  <p class="services-item-description">
-                    Revitalizează, reîmprospătează, regenerează
-                  </p>
-                </li>
-                <li class="services-item-effects list">
-                  <p class="services-item-description">
-                    Reduce vizibil liniile de expresie
-                  </p>
-                </li>
-                <li class="services-item-effects list">
-                  <p class="services-item-description">Reînnoire celulară</p>
-                </li>
-                <li class="services-item-effects list">
-                  <p class="services-item-description">Îndepărtează toxinele</p>
-                </li>
-              </ul>
-        </div>
-        
-      </div>
-      <!-- start services page -->
-
-      <!-- start price page -->
-      <div class="price-container">
-        <h2 class="price-title">Ofertele lunii</h2>
-        <p class="price-description">Profită de ofertele noastre!</p>
-
-        <div class="price-container-arrows">
-            <svg class="price-left-arrow" width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_22_374)">
-                <path d="M7.24082 16.1597L21.1167 29.9972C21.5713 30.4503 22.3074 30.4495 22.7612 29.9948C23.2148 29.5402 23.2136 28.8037 22.7589 28.3503L9.70895 15.3364L22.7594 2.32252C23.214 1.86901 23.2152 1.13301 22.7617 0.678326C22.5342 0.450397 22.2361 0.336432 21.9381 0.336432C21.6408 0.336432 21.3439 0.449635 21.1168 0.675982L7.24082 14.5131C7.02185 14.731 6.89898 15.0275 6.89898 15.3364C6.89898 15.6453 7.02221 15.9414 7.24082 16.1597Z" fill="#212121" />
-                </g>
-                <defs>
-                <clipPath id="clip0_22_374">
-                    <rect width="30" height="30" fill="white" transform="matrix(-1 0 0 -1 30 30.3364)" />
-                </clipPath>
-                </defs>
-            </svg>
-            <ul class="price-list">
-            <li class="price-item list">
-                <img
-                class="price-img"
-                src="./img/price/brows.png"
-                alt="how to paint brows correctly"
-                />
-
-                <div class="price-description-container">
-                    <h3 class="price-item-title">Laminare sprâncene</h2>
-                    <p class="price-higher-description">Stilizare, laminare sprâncene</p>
-                    <p class="price-lower-description">110 lei / ședință</p>
+                <!-- start part of cleaning face with description -->
+                <div class="cleaning-main-container">
+                    <img class="face-cleaning" src="./img/main/cleaning_face.png" alt="face cleaning" />
+                    <div class="cleaning-description-container">
+                        <h2 class="secondaty-title">
+                            Surprinde Persoana Iubită <br />
+                            cu un Voucher Cadou!
+                        </h2>
+                        <p class="secondary-description">
+                            Alege cel mai frumos si ​inspirat cadou!
+                        </p>
+                        <div class="main-btn-svg">
+                            <button class="main-btn" type="button">Rezervă acum</button>
+                            <svg class="main-btn-svg" width="16" height="16">
+                                <use href="./img/sprite.svg#icon-right-arrow"></use>
+                            </svg>
+                        </div>
+                    </div>
                 </div>
+            </div>
 
-            </li>
-
-            <li class="price-item list">
-                <img class="price-img" src="./img/price/laser.png" alt="laser" />
-
-                <div class="price-description-container">
-                    <h3 class="price-item-title">Epilare Definitivă - Pachet Smart</h3>
-                    <p class="price-higher-description">Axilă, inghinal integral, picioare integral</p>
-                    <p class="price-lower-description">450 lei / ședință</p></div>
-            </li>
-
-            <li class="price-item list">
-                <img
-                class="price-img"
-                src="./img/price/cleaning-left-cheek.png"
-                alt="cleaning left cheek"
-                />
-
-                <div class="price-description-container">
-                    <h3 class="price-item-title">Epilare Progresiv Definitivă</h3>
-                    <p class="price-higher-description">Pachet 6 ședințe FULL BODY + 6 ședințe Rejuvenare Facială Laser</p>
-
-                    <div class="new-price-container">
-                        <p class="price-first-price">6900 lei</p>
-                        <p class="price-last-price">3200 lei</p>
+            <!-- end part of cleaning face with description -->
+            <!-- start lower part main page -->
+            <ul class="main-advantages list">
+                <li class="main-advantages-list">
+                    <div class="main-advantages-container">
+                        <svg class="main-advantages-svg">
+                            <use href="./img/sprite.svg#icon-diamond"></use>
+                        </svg>
+                        <p class="main-advantages-description">Produse de calitate</p>
                     </div>
+                </li>
+                <li class="main-advantages-list">
+                    <div class="main-advantages-container">
+                        <svg class="main-advantages-svg">
+                            <use href="./img/sprite.svg#icon-certificate"></use>
+                        </svg>
+                        <p class="main-advantages-description">Personal calificat</p>
                     </div>
-            </li>
+                </li>
+                <li class="main-advantages-list">
+                    <div class="main-advantages-container">
+                        <svg class="main-advantages-svg">
+                            <use href="./img/sprite.svg#icon-medal"></use>
+                        </svg>
+                        <p class="main-advantages-description">Standarde înalte</p>
+                    </div>
+                </li>
             </ul>
-            <svg class="price-right-arrow" width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_22_370)">
-                <path d="M22.7592 14.5132L8.8833 0.675676C8.42867 0.222572 7.69262 0.223334 7.23875 0.67802C6.78524 1.13265 6.78641 1.86911 7.2411 2.32256L20.291 15.3365L7.24063 28.3503C6.786 28.8038 6.78483 29.5398 7.23829 29.9945C7.4658 30.2225 7.76387 30.3364 8.06194 30.3364C8.35924 30.3364 8.65613 30.2232 8.88324 29.9969L22.7592 16.1597C22.9781 15.9419 23.101 15.6454 23.101 15.3365C23.101 15.0276 22.9778 14.7314 22.7592 14.5132Z" fill="#212121" />
-                </g>
-                <defs>
-                <clipPath id="clip0_22_370">
-                    <rect width="30" height="30" fill="white" transform="translate(0 0.336426)" />
-                </clipPath>
-                </defs>
+            <!-- end lower part main page -->
+            <img class="main-img" src="./img/main/woman-main.png" alt="main woman" />
+            <div class="oval-main"></div>
+            <svg class="main-img-svg" width="92" height="92">
+                <use href="./img/sprite.svg#icon-sun-star"></use>
             </svg>
-        </div>
-        
-        <div class="price-btn-container">
-            <button class="reviews-btn" type="button">VEZI PAGINA SERVICII</button>
-        </div>
-        
-      </div>
-      <!-- end price page -->
 
-      <!-- start record page -->
-      <div class="contact-main-container">
-        <div class="contact-secondary-container">
-            <svg class="contact-leaf" width="171" height="60" viewBox="0 0 171 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_22_612)">
-                  <path d="M110.754 60H85.5149C85.5149 26.8617 112.487 0 145.761 0H171C171 33.1383 144.028 60 110.754 60Z" fill="#ECD8BD" />
-                  <path d="M60.2458 60H85.4851C85.5149 26.8617 58.5134 0 25.2393 0H0C0 33.1383 26.9717 60 60.2458 60Z" fill="#ECD8BD" />
+            <!-- end main page -->
+        </div>
+
+        <!-- start description page -->
+        <div class="description-container">
+            <div class="container-img-description">
+                <img class="lifting-description" src="./img/description/lifting.png" alt="lifting face" />
+
+                <div class="container-description-btn">
+                    <h2 class="description-title">
+                        Produse profesionale de <br />
+                        îngrijire și ​frumusețe a pielii <br />
+                        de nivel premium
+                    </h2>
+                    <p class="description-definition">
+                        Expertiză, combinată cu calitate: Esența frumuseții. La Aesthetc
+                        Lab avem produse <br />
+                        profesionale de îngrijire și frumusețe a pielii excepționale.
+                    </p>
+                    <div class="description-btn-svg-container">
+                        <svg class="description-btn-svg">
+                            <use href="./img/sprite.svg#icon-clock"></use>
+                        </svg>
+                        <button class="description-btn" type="button">PROGRAMARE</button>
+                    </div>
+                </div>
+            </div>
+
+            <svg class="description-sun-svg" width="460" height="540" viewBox="0 0 460 540" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_22_549)">
+                    <path d="M327.334 201.832C326.722 201.178 326.729 200.15 327.409 199.513L350.251 178.12C350.904 177.509 351.932 177.517 352.57 178.197C353.182 178.851 353.175 179.879 352.495 180.516L329.652 201.909C329 202.52 327.946 202.485 327.334 201.832Z" stroke="#ECD8BD" stroke-miterlimit="10" />
+                    <path d="M298.915 177.755C298.379 177.184 298.328 176.312 298.798 175.668L317.565 150.631C318.115 149.911 319.121 149.786 319.817 150.311C320.512 150.835 320.663 151.868 320.14 152.563L301.373 177.6C300.822 178.32 299.816 178.445 299.121 177.921C299.042 177.892 298.966 177.81 298.915 177.755Z" stroke="#ECD8BD" stroke-miterlimit="10" />
+                    <path d="M266.713 158.96C266.254 158.47 266.145 157.754 266.456 157.105L280.595 129.198C281.016 128.394 281.977 128.057 282.781 128.479C283.559 128.874 283.923 129.862 283.501 130.666L269.362 158.573C268.941 159.377 267.981 159.714 267.177 159.292C266.995 159.206 266.84 159.096 266.713 158.96Z" stroke="#ECD8BD" stroke-miterlimit="10" />
+                    <path d="M231.762 146.059C231.38 145.651 231.215 145.039 231.392 144.465L240.454 114.516C240.719 113.654 241.604 113.182 242.466 113.449C243.328 113.715 243.8 114.601 243.535 115.462L234.473 145.411C234.208 146.273 233.323 146.744 232.461 146.478C232.199 146.417 231.941 146.25 231.762 146.059Z" stroke="#ECD8BD" stroke-miterlimit="10" />
+                    <path d="M195.108 139.406C194.802 139.079 194.606 138.598 194.701 138.1L198.419 107.023C198.526 106.156 199.339 105.498 200.206 105.606C201.073 105.714 201.732 106.527 201.625 107.394L197.907 138.47C197.8 139.337 196.987 139.996 196.121 139.888C195.699 139.874 195.362 139.678 195.108 139.406Z" stroke="#ECD8BD" stroke-miterlimit="10" />
+                    <path d="M157.848 139.246C157.593 138.974 157.42 138.625 157.406 138.229L155.697 106.972C155.646 106.1 156.331 105.305 157.228 105.282C158.1 105.232 158.896 105.918 158.92 106.816L160.628 138.073C160.68 138.945 159.995 139.74 159.097 139.762C158.621 139.799 158.154 139.573 157.848 139.246Z" stroke="#ECD8BD" stroke-miterlimit="10" />
+                    <path d="M121.146 145.514C120.967 145.323 120.818 145.055 120.748 144.762L113.634 114.274C113.425 113.397 113.981 112.519 114.831 112.336C115.708 112.128 116.586 112.685 116.77 113.535L123.884 144.023C124.093 144.9 123.537 145.778 122.687 145.961C122.101 146.152 121.528 145.922 121.146 145.514Z" stroke="#ECD8BD" stroke-miterlimit="10" />
+                    <path d="M86.0854 158.113C85.9579 157.977 85.8576 157.816 85.7845 157.629L73.4733 128.84C73.1044 128.011 73.5038 127.074 74.3332 126.706C75.1627 126.338 76.0992 126.739 76.468 127.569L88.7793 156.357C89.1482 157.187 88.7488 158.123 87.9193 158.491C87.2514 158.759 86.5443 158.603 86.0854 158.113Z" stroke="#ECD8BD" stroke-miterlimit="10" />
+                    <path d="M53.7635 176.58C53.687 176.498 53.636 176.444 53.5867 176.337L36.4723 150.105C35.9692 149.35 36.2122 148.356 36.9396 147.879C37.6943 147.376 38.7157 147.595 39.1662 148.349L56.2806 174.58C56.7837 175.336 56.5407 176.33 55.8133 176.807C55.1657 177.26 54.2989 177.152 53.7635 176.58Z" stroke="#ECD8BD" stroke-miterlimit="10" />
+                    <path d="M25.1469 200.366L3.7307 177.498C3.11881 176.845 3.12557 175.817 3.80542 175.18C4.45807 174.569 5.48637 174.577 6.12375 175.257L27.54 198.125C28.1518 198.778 28.1451 199.806 27.4652 200.443C26.7854 201.08 25.7588 201.019 25.1469 200.366Z" stroke="#ECD8BD" stroke-miterlimit="10" />
+                    <path d="M347.632 526.933L326.216 504.066C325.604 503.412 325.611 502.384 326.291 501.747C326.943 501.136 327.971 501.144 328.609 501.824L350.025 524.692C350.637 525.345 350.63 526.373 349.95 527.01C349.272 527.594 348.244 527.586 347.632 526.933Z" stroke="#ECD8BD" stroke-miterlimit="10" />
+                    <path d="M350.287 475.645C349.752 475.073 349.701 474.201 350.17 473.558C350.721 472.837 351.727 472.713 352.422 473.237L377.477 492.032C378.198 492.583 378.323 493.59 377.8 494.285C377.249 495.005 376.243 495.129 375.548 494.605L350.493 475.81C350.415 475.781 350.338 475.699 350.287 475.645Z" stroke="#ECD8BD" stroke-miterlimit="10" />
+                    <path d="M369.02 443.486C368.561 442.996 368.453 442.28 368.764 441.631C369.185 440.828 370.145 440.491 370.949 440.913L398.87 455.083C399.674 455.505 400.012 456.466 399.591 457.269C399.169 458.073 398.209 458.41 397.405 457.988L369.484 443.818C369.302 443.733 369.148 443.622 369.02 443.486Z" stroke="#ECD8BD" stroke-miterlimit="10" />
+                    <path d="M381.882 408.547C381.5 408.139 381.335 407.527 381.512 406.952C381.777 406.091 382.662 405.619 383.524 405.885L413.481 414.98C414.343 415.246 414.815 416.132 414.55 416.993C414.285 417.855 413.399 418.327 412.538 418.06L382.581 408.966C382.319 408.905 382.061 408.738 381.882 408.547Z" stroke="#ECD8BD" stroke-miterlimit="10" />
+                    <path d="M388.471 371.869C388.165 371.543 387.97 371.061 388.065 370.564C388.172 369.697 388.984 369.038 389.851 369.146L420.929 372.898C421.796 373.006 422.456 373.819 422.349 374.686C422.242 375.552 421.429 376.211 420.562 376.103L389.484 372.351C389.09 372.312 388.726 372.142 388.471 371.869Z" stroke="#ECD8BD" stroke-miterlimit="10" />
+                    <path d="M388.644 334.609C388.389 334.337 388.215 333.988 388.202 333.592C388.151 332.72 388.836 331.925 389.733 331.902L420.986 330.227C421.858 330.177 422.654 330.862 422.677 331.76C422.728 332.632 422.043 333.427 421.146 333.45L389.893 335.125C389.417 335.162 388.95 334.936 388.644 334.609Z" stroke="#ECD8BD" stroke-miterlimit="10" />
+                    <path d="M382.284 297.896C382.106 297.705 381.956 297.436 381.886 297.144C381.677 296.267 382.233 295.388 383.083 295.206L413.561 288.124C414.438 287.916 415.317 288.473 415.5 289.323C415.709 290.2 415.154 291.078 414.304 291.261L383.826 298.343C383.267 298.509 382.667 298.304 382.284 297.896Z" stroke="#ECD8BD" stroke-miterlimit="10" />
+                    <path d="M369.674 262.847C369.546 262.711 369.446 262.549 369.373 262.362C369.004 261.532 369.403 260.596 370.233 260.228L399.006 247.947C399.835 247.579 400.772 247.979 401.141 248.809C401.51 249.639 401.11 250.575 400.281 250.943L371.508 263.224C370.865 263.519 370.133 263.337 369.674 262.847Z" stroke="#ECD8BD" stroke-miterlimit="10" />
+                    <path d="M351.201 230.477C351.124 230.396 351.073 230.341 351.024 230.234C350.521 229.479 350.764 228.485 351.492 228.008L377.703 210.92C378.458 210.418 379.479 210.637 379.93 211.39C380.433 212.145 380.19 213.139 379.462 213.616L353.251 230.704C352.576 231.183 351.736 231.049 351.201 230.477Z" stroke="#ECD8BD" stroke-miterlimit="10" />
                 </g>
                 <defs>
-                  <clipPath id="clip0_22_612">
-                    <rect width="171" height="60" fill="white" />
-                  </clipPath>
+                    <clipPath id="clip0_22_549">
+                        <rect width="497.065" height="257.823" fill="white" transform="translate(188.182) rotate(46.8768)" />
+                    </clipPath>
                 </defs>
             </svg>
-            <h2 class="contact-title">
-                Abonează-te pentru a primi cele mai noi oferte de la Aesthetic Lab
-            </h2>
-            <div class="contact-email-container">
-                <input class="contact-input" type="email" name="email" value="Adresa ta de email" />
-                <button class="contact-btn">ABONEAZĂTE</button>
+            <img class="description-img" src="./img/description/white_mask_half_face.png" alt="mask on half face" />
+
+            <svg class="description-botom-svg" width="114" height="114" viewBox="0 0 114 114" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_22_504)">
+                    <path d="M108.415 51.7386L63.0946 54.4726L97.0728 24.3577C97.2243 24.2269 97.3827 24.0616 97.5204 23.9101C99.4487 21.7339 99.249 18.4008 97.0728 16.4726C94.8967 14.5444 91.5636 14.7441 89.6353 16.9202L59.5273 50.9054L62.2544 5.58496C62.2682 5.38525 62.2682 5.1511 62.2544 4.95139C62.0822 2.04527 59.5824 -0.165316 56.6763 0.00684733C53.7702 0.179011 51.5596 2.67883 51.7317 5.58496L54.4657 50.9054L24.3646 16.9271C24.2337 16.7756 24.0685 16.6172 23.917 16.4795C21.7408 14.5512 18.4077 14.751 16.4795 16.9271C14.5512 19.1033 14.751 22.4364 16.9271 24.3646L50.9054 54.4726L5.58496 51.7386C5.38525 51.7249 5.1511 51.7249 4.95139 51.7386C2.04527 51.9108 -0.165316 54.4106 0.00684733 57.3167C0.179011 60.2229 2.67883 62.4335 5.58496 62.2613L50.9054 59.5273L16.9271 89.6422C16.7825 89.7731 16.6172 89.9383 16.4795 90.0899C14.5512 92.266 14.751 95.5991 16.9271 97.5273C19.1033 99.4556 22.4364 99.2559 24.3646 97.0797L54.4726 63.0946L51.7386 108.415C51.7317 108.615 51.7249 108.849 51.7386 109.049C51.9108 111.955 54.4106 114.165 57.3167 113.993C60.2229 113.821 62.4335 111.321 62.2613 108.415L59.5273 63.0946L89.6422 97.0728C89.7731 97.2243 89.9383 97.3827 90.0899 97.5204C92.266 99.4487 95.5991 99.249 97.5273 97.0728C99.4556 94.8967 99.2559 91.5636 97.0797 89.6353L63.0946 59.5273L108.415 62.2613C108.615 62.2751 108.849 62.2751 109.049 62.2613C111.955 62.0891 114.165 59.5893 113.993 56.6832C113.814 53.7771 111.321 51.5665 108.415 51.7386Z" fill="#ECD8BD" />
+                </g>
+                <defs>
+                    <clipPath id="clip0_22_504">
+                        <rect width="114" height="114" fill="white" />
+                    </clipPath>
+                </defs>
+            </svg>
+        </div>
+        <!-- end description page -->
+
+        <!-- start photo page -->
+        <div class="photo-container">
+            <h2 class="photo-title">Serviciile noastre</h2>
+            <p class="photo-description">
+                Răsfață-te cu serviciile noastre pentru toate vârstele
+            </p>
+
+            <ul class="photo-list">
+                <li class="photo-item list">
+                    <img class="photo-img" src="./img/photo/massage-face.png" alt="massage face" />
+                    <p class="photo-main-description">Rejuvenare faciala laser</p>
+                    <div class="photo-description-btn-container">
+                        <button class="photo-list-btn">Ofertă</button>
+                        <p class="photo-secondary-description">350 Lei</p>
+                    </div>
+                </li>
+                <li class="photo-item list">
+                    <img class="photo-img" src="./img/photo/mask-with-towel.png" alt="service with mask and white towel on forehead" />
+                    <p class="photo-main-description">Glow Peel</p>
+                    <div class="photo-description-btn-container">
+                        <button class="photo-list-btn">Ofertă</button>
+                        <p class="photo-secondary-description">400 Lei</p>
+                    </div>
+
+                </li>
+                <li class="photo-item list">
+                    <img class="photo-img" src="./img/photo/gel-mask.png" alt="gel mask" />
+                    <p class="photo-main-description">Peeling chimic</p>
+                    <div class="photo-description-btn-container">
+                        <button class="photo-list-btn">Ofertă</button>
+                        <p class="photo-secondary-description">350 Lei</p>
+                    </div>
+
+                </li>
+                <li class="photo-item list">
+                    <img class="photo-img" src="./img/photo/cleaning-left-cheek.png" alt="cleaning left cheek" />
+                    <p class="photo-main-description">Microneedling</p>
+                    <div class="photo-description-btn-container">
+                        <button class="photo-list-btn">Ofertă</button>
+                        <p class="photo-secondary-description">350 Lei</p>
+                    </div>
+
+                </li>
+                <li class="photo-item list">
+                    <img class="photo-img" src="./img/photo/cleaning-forehead.png" alt="cleaning forehead" />
+                    <p class="photo-main-description">Microneedling cu Botox</p>
+                    <div class="photo-description-btn-container">
+                        <button class="photo-list-btn">Ofertă</button>
+                        <p class="photo-secondary-description">1150 Lei</p>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="photo-btn-container">
+                <button class="photo-main-btn" type="button">
+                    VEZI PAGINA SERVICII
+                </button>
             </div>
         </div>
-        
-      </div>
-      <!-- end record page -->
+        <!-- end photo page -->
+
+        <!-- start masters page -->
+        <div class="masters-container">
+            <ul class="masters-list">
+                <li class="masters-item list">
+                    <img class="masters-img" src="./img/masters/woman-with-flower.png" alt="master with flower in hand" />
+                    <svg class="masters-item-zigzag" width="759" height="189" viewBox="0 0 759 189" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M747.007 165.884L621.895 23L494.716 165.884L372.603 23L245.425 165.884L124.179 23L-3 165.884" stroke="#2C2C2C" stroke-width="30" stroke-miterlimit="10" />
+                    </svg>
+                </li>
+
+                <li class="masters-item list">
+                    <div class="masters-description-container">
+                        <p class="higher-masters-title">Despre noi</p>
+                        <h2 class="masters-title">
+                            Expertiză, combinată cu calitate: Esența frumuseții.
+                        </h2>
+                        <p class="lower-masters-description">
+                            La Aesthetic Lab avem produse profesionale de îngrijire și frumusețe a
+                            pielii excepționale. Munca noastră se concetrează pe tine, clienta
+                            nostră: tot ceea ce facem la Esthetic Lab începe și se termină cu
+                            tratamentul de înfrumusețare cu produse cosmetice de calitate, oferim
+                            întotdeauna clientelor noastre un nivel optim de tratament și
+                            îngrijire cu Produse de calitate premiate si de succes. În calitate de
+                            specialiști în frumusețe și wellness, vă împărtășim obiectivul nostru
+                            de a satisface nevoile individuale cu produse de frumusețe într-un mod
+                            inovator, cu o precizie care inspiră încredere. Acest lucru ne-a făcut
+                            și continuă să ne facă să fim unici.
+                        </p>
+                    </div>
+                </li>
+
+                <li class="masters-item list">
+                    <svg class="masters-item-svg-dots" width="76" height="60" viewBox="0 0 76 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_22_511)">
+                            <path d="M4.61 2.3C4.61 3.57 3.58 4.6 2.31 4.6C1.03 4.61 0 3.58 0 2.3C0 1.02 1.03 0 2.3 0C3.58 0 4.61 1.03 4.61 2.3Z" fill="#ECD8BD" />
+                            <path d="M28.1601 2.3C28.1601 3.57 27.1301 4.6 25.8601 4.6C24.5901 4.6 23.5601 3.57 23.5601 2.3C23.5601 1.03 24.5801 0 25.8501 0C27.1201 0 28.1601 1.03 28.1601 2.3Z" fill="#ECD8BD" />
+                            <path d="M51.7001 2.3C51.7001 3.57 50.6701 4.6 49.4001 4.6C48.1301 4.6 47.1001 3.57 47.1001 2.3C47.1001 1.03 48.1301 0 49.4001 0C50.6701 0 51.7001 1.03 51.7001 2.3Z" fill="#ECD8BD" />
+                            <path d="M75.2499 2.3C75.2499 3.57 74.2199 4.6 72.9499 4.6C71.6799 4.6 70.6499 3.57 70.6499 2.3C70.6499 1.03 71.6699 0 72.9499 0C74.2199 0 75.2499 1.03 75.2499 2.3Z" fill="#ECD8BD" />
+                            <path d="M4.61001 20.6401C4.61001 21.9101 3.58001 22.9401 2.31001 22.9401C1.04001 22.9401 0.0100098 21.9101 0.0100098 20.6401C0.0100098 19.3701 1.04001 18.3401 2.31001 18.3401C3.58001 18.3401 4.61001 19.3701 4.61001 20.6401Z" fill="#ECD8BD" />
+                            <path d="M28.1601 20.6401C28.1601 21.9101 27.1301 22.9401 25.8601 22.9401C24.5901 22.9401 23.5601 21.9101 23.5601 20.6401C23.5601 19.3701 24.5901 18.3401 25.8601 18.3401C27.1201 18.3401 28.1601 19.3701 28.1601 20.6401Z" fill="#ECD8BD" />
+                            <path d="M51.7001 20.6401C51.7001 21.9101 50.6701 22.9401 49.4001 22.9401C48.1301 22.9401 47.1001 21.9101 47.1001 20.6401C47.1001 19.3701 48.1301 18.3401 49.4001 18.3401C50.6701 18.3401 51.7001 19.3701 51.7001 20.6401Z" fill="#ECD8BD" />
+                            <path d="M75.2499 20.6401C75.2499 21.9101 74.2199 22.9401 72.9499 22.9401C71.6799 22.9401 70.6499 21.9101 70.6499 20.6401C70.6499 19.3701 71.6799 18.3401 72.9499 18.3401C74.2199 18.3401 75.2499 19.3701 75.2499 20.6401Z" fill="#ECD8BD" />
+                            <path d="M4.61 39C4.61 40.27 3.58 41.3 2.31 41.3C1.03 41.3 0 40.27 0 39C0 37.73 1.03 36.7 2.3 36.7C3.58 36.69 4.61 37.72 4.61 39Z" fill="#ECD8BD" />
+                            <path d="M28.1601 39C28.1601 40.27 27.1301 41.3 25.8601 41.3C24.5901 41.3 23.5601 40.27 23.5601 39C23.5601 37.73 24.5901 36.7 25.8601 36.7C27.1201 36.69 28.1601 37.72 28.1601 39Z" fill="#ECD8BD" />
+                            <path d="M51.7001 39C51.7001 40.27 50.6701 41.3 49.4001 41.3C48.1301 41.3 47.1001 40.27 47.1001 39C47.1001 37.73 48.1301 36.7 49.4001 36.7C50.6701 36.69 51.7001 37.72 51.7001 39Z" fill="#ECD8BD" />
+                            <path d="M75.2499 39C75.2499 40.27 74.2199 41.3 72.9499 41.3C71.6799 41.3 70.6499 40.27 70.6499 39C70.6499 37.73 71.6799 36.7 72.9499 36.7C74.2199 36.69 75.2499 37.72 75.2499 39Z" fill="#ECD8BD" />
+                            <path d="M4.61001 57.33C4.61001 58.6 3.58001 59.63 2.31001 59.63C1.04001 59.63 0.0100098 58.6 0.0100098 57.33C0.0100098 56.06 1.04001 55.03 2.31001 55.03C3.58001 55.03 4.61001 56.06 4.61001 57.33Z" fill="#ECD8BD" />
+                            <path d="M28.1601 57.33C28.1601 58.6 27.1301 59.63 25.8601 59.63C24.5901 59.63 23.5601 58.6 23.5601 57.33C23.5601 56.06 24.5901 55.03 25.8601 55.03C27.1201 55.03 28.1601 56.06 28.1601 57.33Z" fill="#ECD8BD" />
+                            <path d="M51.7001 57.33C51.7001 58.6 50.6701 59.63 49.4001 59.63C48.1301 59.63 47.1001 58.6 47.1001 57.33C47.1001 56.06 48.1301 55.03 49.4001 55.03C50.6701 55.03 51.7001 56.06 51.7001 57.33Z" fill="#ECD8BD" />
+                            <path d="M75.2499 57.33C75.2499 58.6 74.2199 59.63 72.9499 59.63C71.6799 59.63 70.6499 58.6 70.6499 57.33C70.6499 56.06 71.6799 55.03 72.9499 55.03C74.2199 55.03 75.2499 56.06 75.2499 57.33Z" fill="#ECD8BD" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_22_511">
+                                <rect width="75.25" height="59.64" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    <img class="masters-img" src="./img/masters/woman-with-hads-near-face.png" alt="woman with her hands near the face" />
+                </li>
+            </ul>
+
+
+        </div>
+        <!-- end masters page -->
+
+        <!-- start services page -->
+        <div class="services-container">
+            <svg class="services-lower-svg" width="108" height="107" viewBox="0 0 108 107" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_22_602)">
+                    <path d="M101.482 82.743L80.9881 59.945L108 45.58L77.7371 41.3635L89.243 12.9061L63.3785 29.243L53.992 0L44.6215 29.243L18.757 12.9061L30.247 41.3635L0 45.58L26.996 59.945L6.51793 82.743L36.3665 76.282L35.251 107L53.992 82.743L72.749 107L71.6175 76.282L101.482 82.743Z" fill="#B58224" />
+                </g>
+                <defs>
+                    <clipPath id="clip0_22_602">
+                        <rect width="108" height="107" fill="white" />
+                    </clipPath>
+                </defs>
+            </svg>
+
+            <h2 class="services-title">KLAPP - Tratamente cosmetice inovatoare</h2>
+
+            <ul class="services-list-btn">
+                <li class="services-item list">
+                    <button class="services-btn">A Classic Gold</button>
+                </li>
+                <li class="services-item list">
+                    <button class="services-btn">Caviar Power</button>
+                </li>
+                <li class="services-item list">
+                    <button class="services-btn">X-Treme Hyaluron Infusion</button>
+                </li>
+                <li class="services-item list">
+                    <button class="services-btn">Clinical Care</button>
+                </li>
+                <li class="services-item list">
+                    <button class="services-btn">Peeling Acid</button>
+                </li>
+            </ul>
+
+            <div class="services-description-effects-container">
+                <p class="services-description">
+                    Vitamina A are o importanță fundamentală în structura și funcționarea
+                    pielii, ​având un efect stimulant în combaterea îmbătrânirii. Se
+                    stimulează formarea ​colagenului și activitatea enzimatică și are un
+                    efect benefic asupra ​mecanismelor de reparare a pielii. Retinolul
+                    utilizat de GK a făcut dovada ​înaltei sale eficiente obtinandu-se
+                    rezultate remarcabile. Produsele au o ​eficiență maximă, ingredientele
+                    active fiind perfect echilibrate, realizând în ​felul acesta la un
+                    tratament remarcabil, cu rezultate dorite: o piele proaspătă și
+                    elastică.
+                </p>
+
+                <ul class="services-list-effects">
+                    <li class="services-item-effects list">
+                        <h3 class="services-effects-title">Efectele tratamentului:</h3>
+                    </li>
+                    <li class="services-item-effects list">
+                        <p class="services-item-description">Stimulează mușchii feței</p>
+                    </li>
+                    <li class="services-item-effects list">
+                        <p class="services-item-description">
+                            Armonizează fluxul de energie
+                        </p>
+                    </li>
+                    <li class="services-item-effects list">
+                        <p class="services-item-description">
+                            Revitalizează, reîmprospătează, regenerează
+                        </p>
+                    </li>
+                    <li class="services-item-effects list">
+                        <p class="services-item-description">
+                            Reduce vizibil liniile de expresie
+                        </p>
+                    </li>
+                    <li class="services-item-effects list">
+                        <p class="services-item-description">Reînnoire celulară</p>
+                    </li>
+                    <li class="services-item-effects list">
+                        <p class="services-item-description">Îndepărtează toxinele</p>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <!-- start services page -->
+
+        <!-- start price page -->
+        <div class="price-container">
+            <h2 class="price-title">Ofertele lunii</h2>
+            <p class="price-description">Profită de ofertele noastre!</p>
+
+            <div class="price-container-arrows">
+                <svg class="price-left-arrow" width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_22_374)">
+                        <path d="M7.24082 16.1597L21.1167 29.9972C21.5713 30.4503 22.3074 30.4495 22.7612 29.9948C23.2148 29.5402 23.2136 28.8037 22.7589 28.3503L9.70895 15.3364L22.7594 2.32252C23.214 1.86901 23.2152 1.13301 22.7617 0.678326C22.5342 0.450397 22.2361 0.336432 21.9381 0.336432C21.6408 0.336432 21.3439 0.449635 21.1168 0.675982L7.24082 14.5131C7.02185 14.731 6.89898 15.0275 6.89898 15.3364C6.89898 15.6453 7.02221 15.9414 7.24082 16.1597Z" fill="#212121" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_22_374">
+                            <rect width="30" height="30" fill="white" transform="matrix(-1 0 0 -1 30 30.3364)" />
+                        </clipPath>
+                    </defs>
+                </svg>
+                <ul class="price-list">
+                    <li class="price-item list">
+                        <img class="price-img" src="./img/price/brows.png" alt="how to paint brows correctly" />
+
+                        <div class="price-description-container">
+                            <h3 class="price-item-title">Laminare sprâncene</h3>
+                            <p class="price-higher-description">Stilizare, laminare sprâncene</p>
+                            <p class="price-lower-description">110 lei / ședință</p>
+                        </div>
+
+                    </li>
+
+                    <li class="price-item list">
+                        <img class="price-img" src="./img/price/laser.png" alt="laser" />
+
+                        <div class="price-description-container">
+                            <h3 class="price-item-title">Epilare Definitivă - Pachet Smart</h3>
+                            <p class="price-higher-description">Axilă, inghinal integral, picioare integral</p>
+                            <p class="price-lower-description">450 lei / ședință</p>
+                        </div>
+                    </li>
+
+                    <li class="price-item list">
+                        <img class="price-img" src="./img/price/cleaning-left-cheek.png" alt="cleaning left cheek" />
+
+                        <div class="price-description-container">
+                            <h3 class="price-item-title">Epilare Progresiv Definitivă</h3>
+                            <p class="price-higher-description">Pachet 6 ședințe FULL BODY + 6 ședințe Rejuvenare Facială Laser</p>
+
+                            <div class="new-price-container">
+                                <p class="price-first-price">6900 lei</p>
+                                <p class="price-last-price">3200 lei</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <svg class="price-right-arrow" width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_22_370)">
+                        <path d="M22.7592 14.5132L8.8833 0.675676C8.42867 0.222572 7.69262 0.223334 7.23875 0.67802C6.78524 1.13265 6.78641 1.86911 7.2411 2.32256L20.291 15.3365L7.24063 28.3503C6.786 28.8038 6.78483 29.5398 7.23829 29.9945C7.4658 30.2225 7.76387 30.3364 8.06194 30.3364C8.35924 30.3364 8.65613 30.2232 8.88324 29.9969L22.7592 16.1597C22.9781 15.9419 23.101 15.6454 23.101 15.3365C23.101 15.0276 22.9778 14.7314 22.7592 14.5132Z" fill="#212121" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_22_370">
+                            <rect width="30" height="30" fill="white" transform="translate(0 0.336426)" />
+                        </clipPath>
+                    </defs>
+                </svg>
+            </div>
+
+            <div class="price-btn-container">
+                <button class="reviews-btn" type="button">VEZI PAGINA SERVICII</button>
+            </div>
+
+        </div>
+        <!-- end price page -->
+
+        <!-- start record page -->
+        <div class="contact-main-container">
+            <div class="contact-secondary-container">
+                <svg class="contact-leaf" width="171" height="60" viewBox="0 0 171 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_22_612)">
+                        <path d="M110.754 60H85.5149C85.5149 26.8617 112.487 0 145.761 0H171C171 33.1383 144.028 60 110.754 60Z" fill="#ECD8BD" />
+                        <path d="M60.2458 60H85.4851C85.5149 26.8617 58.5134 0 25.2393 0H0C0 33.1383 26.9717 60 60.2458 60Z" fill="#ECD8BD" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_22_612">
+                            <rect width="171" height="60" fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg>
+                <h2 class="contact-title">
+                    Abonează-te pentru a primi cele mai noi oferte de la Aesthetic Lab
+                </h2>
+                <div class="contact-email-container">
+                    <input class="contact-input" type="email" name="email" value="Adresa ta de email" />
+                    <button class="contact-btn">ABONEAZĂTE</button>
+                </div>
+            </div>
+
+        </div>
+        <!-- end record page -->
     </main>
     <!-- end main -->
 
     <!-- strat footer -->
     <footer>
-    <div class="footer-line"></div>
-      <div class="footer-container">
+        <div class="footer-line"></div>
+        <div class="footer-container">
 
-        <div class="footer-left-right">
+            <div class="footer-left-right">
 
-            <div class="footer-left-container">
-                <ul class="footer-main-list">
-                <li class="footer-main-item list">
-                    <img class="footer-item-logo" src="./img/logo.png" alt="logo" />
-                </li>
-                <li class="footer-main-item description list">
-                    <p class="footer-higher-description">Beauty & More</p>
-                </li>
-                <li class="footer-main-item list">
-                    <p class="footer-lower-description">Investește în pielea ta!</p>
-                </li>
-                </ul>
+                <div class="footer-left-container">
+                    <ul class="footer-main-list">
+                        <li class="footer-main-item list">
+                            <svg class="footer-item-logo">
+                                <use href="./img/sprite.svg#icon-logo"></use>
+                            </svg>
+                        <li class="footer-main-item description list">
+                            <p class="footer-higher-description">Beauty & More</p>
+                        </li>
+                        <li class="footer-main-item list">
+                            <p class="footer-lower-description">Investește în pielea ta!</p>
+                        </li>
+                    </ul>
 
-                <ul class="footer-social-links">
-                <li class="footer-social-list list">
-                    <svg class="footer-social-svg">
-                        <use href="./img/sprite.svg#icon-instagram"></use>
-                    </svg>
-                </li>
-                <li class="footer-social-list list">
-                    <svg class="footer-social-svg">
-                        <use href="./img/sprite.svg#icon-facebook"></use>
-                    </svg>
-                </li>
-                </ul>
+                    <ul class="social-links">
+                        <li class="social-list list">
+                            <svg class="social-svg">
+                                <use href="./img/sprite.svg#icon-instagram"></use>
+                            </svg>
+                        </li>
+                        <li class="social-list list">
+                            <svg class="social-svg">
+                                <use href="./img/sprite.svg#icon-facebook"></use>
+                            </svg>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-right-container">
+                    <ul class="footer-nav-list">
+                        <li class="footer-nav-item list">
+                            <h2 class="footer-nav-title">Pagini</h2>
+                        </li>
+                        <li class="footer-nav-item list">
+                            <p class="footer-nav-description">Despre</p>
+                        </li>
+                        <li class="footer-nav-item list">
+                            <p class="footer-nav-description">Servicii</p>
+                        </li>
+                        <li class="footer-nav-item list">
+                            <p class="footer-nav-description">Prețuri</p>
+                        </li>
+                        <li class="footer-nav-item list">
+                            <p class="footer-nav-description">Contact</p>
+                        </li>
+                    </ul>
+
+                    <ul class="footer-contact-list">
+                        <li class="footer-contact-item list">
+                            <h2 class="footer-contact-title">Contact</h2>
+                        </li>
+                        <li class="footer-contact-item list">
+                            <a class="contact-link link" href="tel:0752232113">0752 232 113</a>
+                        </li>
+                        <li class="footer-contact-item list">
+                            <a class="contact-link link" href="malito:aestheticlabbrasov@gmail.com">aestheticlabbrasov@gmail.com</a>
+                        </li>
+                        <li class="footer-contact-item list">
+                            <a class="contact-link link" href="https://maps.app.goo.gl/WUTuPLKGX7SM8g4Z7">Str. Carpaților 93, Brașov</a>
+                        </li>
+                    </ul>
+
+                    <ul class="footer-time-list">
+                        <li class="footer-time-item list">
+                            <h2 class="footer-time-title">Program</h2>
+                        </li>
+                        <li class="footer-time-item list">
+                            <p class="footer-time-description">L-V: 09:00-19:00</p>
+                        </li>
+                        <li class="footer-time-item list">
+                            <p class="footer-time-description">S: 09:00-17:00</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-oval"></div>
             </div>
 
-        <div class="footer-right-container">
-            <ul class="footer-nav-list">
-                <li class="footer-nav-item list">
-                  <h2 class="footer-nav-title">Pagini</h2>
-                </li>
-                <li class="footer-nav-item list">
-                  <p class="footer-nav-description">Despre</p>
-                </li>
-                <li class="footer-nav-item list">
-                  <p class="footer-nav-description">Servicii</p>
-                </li>
-                <li class="footer-nav-item list">
-                  <p class="footer-nav-description">Prețuri</p>
-                </li>
-                <li class="footer-nav-item list">
-                  <p class="footer-nav-description">Contact</p>
-                </li>
-              </ul>
-      
-              <ul class="footer-contact-list">
-                <li class="footer-contact-item list">
-                  <h2 class="footer-contact-title">Contact</h2>
-                </li>
-                <li class="footer-contact-item list">
-                  <a class="footer-contact-link link" href="tel:0752 232 113">0752 232 113</a>
-                </li>
-                <li class="footer-contact-item list">
-                  <a class="footer-contact-link link" href="malito:aestheticlabbrasov@gmail.com"
-                    >aestheticlabbrasov@gmail.com</a
-                  >
-                </li>
-                <li class="footer-contact-item list">
-                  <a class="footer-contact-link link" href="https://maps.app.goo.gl/WUTuPLKGX7SM8g4Z7"
-                    >Str. Carpaților 93, Brașov</a
-                  >
-                </li>
-              </ul>
-      
-              <ul class="footer-time-list">
-                <li class="footer-time-item list">
-                  <h2 class="footer-time-title">Program</h2>
-                </li>
-                <li class="footer-time-item list">
-                  <p class="footer-time-description">L-V: 09:00-19:00</p>
-                </li>
-                <li class="footer-time-item list">
-                  <p class="footer-time-description">S: 09:00-17:00</p>
-                </li>
-              </ul>
-        </div>
-        <div class="footer-oval"></div>
-        </div>
+            <div class="footer-line"></div>
 
-        <div class="footer-line"></div>
-
-        <p class="footer-copy">Toate drepturile rezervate &copy; Aesthetic Lab</p>
-      </div>
+            <p class="footer-copy">Toate drepturile rezervate &copy; Aesthetic Lab</p>
+        </div>
     </footer>
     <!-- end footer -->
 
 
     <!-- start modal -->
-    <div class="modal" id="modal">
-        <a href="#header" class="modal-area">
-            <div class="modal-body">
-                <div class="modal-content">
-                    <h2 class="modal-title">hi</h2>
-                    <p class="modal-description">hi hello</p>
-                    <a href="#header" class="modal-btn link">X</a>
+    <div class="modal-contact" id="modal-contact">
+        <a href="##" class="modal-contact-area"></a>
+            <div class="modal-contact-body">
+                <div class="modal-contact-content">
+                    <h2 class="modal-contact-title">Contact us:</h2>
+                    
+                    <ul class="modal-contact-list">
+                        <li class="modal-contact-item list">
+                            <a class="contact-link modal-contact-link link" href="tel:0752232113">0752 232 113</a>
+                        </li>
+                        <li class="modal-contact-item list">
+                            <a class="contact-link modal-contact-link link" href="malito:ohamid@uioct.com">ohamid@uioct.com</a>
+                        </li>
+                        <li class="modal-contact-item list">
+                            <a class="contact-link modal-contact-link link" href="https://maps.apps.goo.gl/iboRuWVFGPnLCXXXA">https://maps.app.goo.gl/iboRuWVFGPnLCXXXA</a>
+                        </li>
+                    </ul>
+                    
+                    
+                    <ul class="social-links modal-icon">
+                        <li class="social-list modal-icon list">
+                            <svg class="social-svg modal-icon">
+                                <use href="./img/sprite.svg#icon-instagram"></use>
+                            </svg>
+                        </li>
+
+                        <li class="social-list modal-icon list">
+                            <svg class="social-svg modal-icon">
+                                <use href="./img/sprite.svg#icon-facebook"></use>
+                            </svg>
+                        </li>
+                    </ul>
+
+                        <a href="##">
+                            <div class="modal-contact-btn">
+                                <svg width="20" height="20">
+                                    <use href="#icon-cross"></use>
+                                </svg>
+                            </div>
+                            
+                            <svg style="display: none;">
+                                <symbol id="icon-cross" viewBox="0 0 32 32">
+                                    <path d="M8.22 5.394l-2.824 2.826 7.776 7.78-7.78 7.78 2.83 2.826 7.778-7.778 7.78 7.78 2.826-2.83-7.778-7.778 7.78-7.78-2.83-2.826-7.778 7.778-7.78-7.78z"></path>
+                                </symbol>
+                            </svg>
+                            
+                        </a>
+                        
+                        
+                        
                 </div>
             </div>
         </a>
     </div>
 
+    <div class="modal-services" id="modal-services">
+        <div class="modal-services-body">
+            <div class="modal-services-content">
+                <h2>hi</h2>
+                <p>hi hello</p>
+                <a href="##" class="modal-services-btn link">X</a>
+            </div>
+        </div>
+    </div>
+
     <!-- end modal -->
-  </body>
+
+    <script src="./script-modals.js"></script>
+</body>
+
 </html>
