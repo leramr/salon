@@ -142,6 +142,22 @@ address {
 
 /* end header */
 
+/* start services-container-input */
+.services-container-input{
+  padding: 100px 40px;
+background-color: #212121;
+color: var(--main-color);
+}
+
+.services-input{
+  background-color: var(--main-color);
+  border: none;
+  border-radius: 10px;
+  padding: 10px 5px;
+}
+/* end services-container-input */
+
+
 /* start main */
 
 /* start main page */
